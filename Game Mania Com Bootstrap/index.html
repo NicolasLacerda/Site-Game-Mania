@@ -1,0 +1,2071 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Game Mania</title>
+    <link rel="stylesheet" type="text/css" href="stylesTopo.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesCorpo1.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesVitrine.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesCorpo2.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="stylesFooter.css" media="screen">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx" crossorigin="anonymous">
+  </head>
+<body>
+
+  <div class="topo">
+
+    <nav class="navbar navbar-dark bg-dark fixed-top">
+      <div class="container-fluid">
+        <a class="navbar-brand" href="#"><img class="logoImg" alt="logo" src="Img\Icones\miniLogoBranca2.png"></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar" aria-labelledby="offcanvasDarkNavbarLabel">
+          <div class="offcanvas-header">
+            <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+              <button class="btn btn-success" type="submit">Search</button>
+            </form>
+            <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+          </div>
+          <div class="offcanvas-body">
+            <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+              
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="login.html">Conta</a>
+              </li>
+              <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Categorias
+                </a>
+                <ul class="dropdown-menu dropdown-menu-dark">
+                  <li><a class="dropdown-item" href="#">Saiba</a></li>
+                  <li><a class="dropdown-item" href="#">Suporte</a></li>
+                  <li>
+                    <hr class="dropdown-divider">
+                  </li>
+                  <li><a class="dropdown-item" href="#">Comunidade</a></li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+
+    <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+
+      <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      </div>
+
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://www.showmetech.com.br/wp-content/uploads//2022/01/Web_Photo_Editor-1920x1024.jpg" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>O notebook gamer supremo</h5>
+            <p>O laptop para jogos de 14 polegadas mais poderoso está de volta e mais poderoso do que nunca.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://t2.tudocdn.net/617563?w=1920" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Seu celular dos sonhos</h5>
+            <p>Some representative placeholder content for the second slide.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img src="https://multiversomais.com/wp-content/uploads/2021/03/CSGO-Gamers-Club-reformula-as-ligas-mensais.png" class="d-block w-100" alt="...">
+          <div class="carousel-caption d-none d-md-block">
+            <h5>Gamers Club</h5>
+            <p>O clube pra quem joga sério.</p>
+          </div>
+        </div>
+      </div>
+
+      <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+      </button>
+
+      <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+      </button>
+    </div>
+
+  </div>
+
+  <div class="background">
+
+  <div class="margem">
+
+  <div class="tituloAnuncios">
+    <img src="Img\Icones\Nuvens1.png" alt="">
+    <h2>Neste Inverno apenas nossas promoções podem te esquentar!!!</h2>
+    <img src="Img\Icones\Nuvens2.png" alt="">
+  </div>
+
+  <div class="vitrine">
+
+    <div class="anuncios">
+      <div class="fileira">
+        <input type="radio" name="blocos" id="fileira1" checked>
+        <input type="radio" name="blocos" id="fileira2">
+
+        <div class="conjunto s1">
+          <div class="conjuntoAnuncios">
+
+            <div class="bloco1">
+
+              <a href="#">
+                <div class="promocao">
+                  <img src="Img\Icones\promocao.png" alt=""></img>
+                </div>
+              </a>
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="Img\Mercado\headphone.png" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>HyperX Cloud Flight</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$1139,00 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="bloco2">
+
+              <a href="#">
+                <div class="promocao">
+                  <img src="Img\Icones\promocao.png" alt=""></img>
+                </div>
+              </a>
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="Img\Mercado\controleCortado.png" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>Controle Xbox Series S</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$500,00 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="bloco3">
+
+              <a href="#">
+                <div class="promocao">
+                  <img src="Img\Icones\promocao.png" alt=""></img>
+                </div>
+              </a>
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="Img\Mercado\gabinete.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>GabineteStorm-Z Anxious</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$1289,00 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="bloco4">
+
+              <a href="#">
+                <div class="promocao">
+                  <img src="Img\Icones\promocao.png" alt=""></img>
+                </div>
+              </a>
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="Img\Mercado\xboxCortado.png" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>Xbox Series S</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$2049,00 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="conjunto">
+            <div class="conjuntoAnuncios">
+  
+              <div class="bloco1">
+
+                <a href="#">
+                  <div class="promocao">
+                    <img src="Img\Icones\promocao.png" alt=""></img>
+                  </div>
+                </a>
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="Img\Mercado\processador.webp" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Intel I9-9900K</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$2829,00 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco2">
+  
+                <a href="#">
+                  <div class="promocao">
+                    <img src="Img\Icones\promocao.png" alt=""></img>
+                  </div>
+                </a>
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/129960/processador-intel-core-i3-10100f-cache-6mb-4-30-ghz-lga-1200-i3-10100f_1603394030_gg.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Intel Core i3-10100F</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$802,99 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco3">
+  
+                <a href="#">
+                  <div class="promocao">
+                    <img src="Img\Icones\promocao.png" alt=""></img>
+                  </div>
+                </a>
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/238133/jogo-gran-turismo-7-edicao-standart-ps4_1659041814_gg.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Gran Turismo 7</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$199,00 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco4">
+  
+                <a href="#">
+                  <div class="promocao">
+                    <img src="Img\Icones\promocao.png" alt=""></img>
+                  </div>
+                </a>
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/155311/gabinete-rise-mode-glass-06-frente-e-lateral-em-vidro-preto-rm-ca-06-fb_1655915595_gg.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Gabinete Rise Mode Glass</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$260,00 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+        </div>
+
+
+        <div class="navigation">
+          <label class="bar1" for="fileira1"></label>
+          <label class="bar2" for="fileira2"></label>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="bannerPequenoContainer">
+    <div class="bannersPequeno">
+    <div class="bannerimagem1">
+      <a href="#"><img src="Img\Banner\Banner1.png" alt=""></a>
+    </div>
+    <div class="bannerimagem2">
+      <a href="#"><img src="Img\Banner\Banner2.png" alt=""></a>
+    </div>
+    </div>
+  </div>
+
+  <div class="vitrine">
+
+    <div class="anuncios">
+      <div class="fileira">
+        <input type="radio" name="blocos" id="fileira3" checked>
+        <input type="radio" name="blocos" id="fileira4">
+
+        <div class="conjunto s1">
+          <div class="conjuntoAnuncios">
+
+            <div class="bloco1">
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="Img\Mercado\cadeira.jpeg" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>Cadeira Xzone Premiun</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$1135,00 </p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="bloco2">
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="Img\Mercado\mouse.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>Glorius Model O</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$436,00 </p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="bloco3">
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="Img\Mercado\celular.jpeg" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>Samsung Galaxy S22 Ultra</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$8549,00 </p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="bloco4">
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="Img\Mercado\monitor.png" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>Monitor AOC Hero 27</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$1999,00 </p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="conjunto">
+            <div class="conjuntoAnuncios">
+  
+              <div class="bloco1">
+
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/z/n/zns-zncr10w-rgbc019012.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Lampada Zinnia Crux ...</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$40,00 </p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco2">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/274006/smartphone-motorola-moto-g20-128gb-4gb-ram-octa-core-camera-quadrupla-azul-capa-protetora-pang0055br_1637689304_gg.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Motorola Moto G20</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> 1.700,88 </p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco3">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/153650/cooler-fan-rise-mode-black-120mm-rm-bk-01-fb_1643635247_gg.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Cooler FAN Rise Mode ...</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$6,99 </p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco4">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/101513/headset-gamer-fallen-morcego-surround-virtual-7-1-drivers-53mm-he-ga-fn-mo_1633372716_gg.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Headset Fallen Morcego</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$399,99 </p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+        </div>
+
+
+        <div class="navigation">
+          <label class="bar1" for="fileira3"></label>
+          <label class="bar2" for="fileira4"></label>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="bannerLongoContainer">
+    <div class="bannerLongo">
+      <a href="#"><img src="Img\Banner\bannerLongo.png" alt=""></a>
+    </div>
+  </div>
+
+  <div class="tituloAnunciosInferior">
+    <h2>Mais Procurados</h2>
+  </div>
+
+  <div class="vitrineInferior">
+
+    <div class="parteSuperior">
+
+      <div class="anunciosPequenosInferiores">
+
+        <div class="fileiraInferior">
+          <input type="radio" name="blocos" id="fileira5" checked>
+          <input type="radio" name="blocos" id="fileira6">
+  
+          <div class="conjunto s1">
+            <div class="conjuntoAnuncios">
+  
+              <div class="bloco1">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/c/o/coolwalletpro.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Carteira COOLWALLET</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> 1.029,90 <div class="blocoPix"><div><p>50% Off</p></div></div></p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco2">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/t/g/tgt-tms90-bl011244202.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Suporte para monitor TGT</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$79,90 <div class="blocoPix"><div><p>15% Off</p></div></div></p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco3">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/z/n/zns-zla100-rgbcw011243.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Luminaria smart ZINNIA</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$189,90 <div class="blocoPix"><div><p>70% Off</p></div></div></p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="conjunto">
+              <div class="conjuntoAnuncios">
+    
+                <div class="bloco1">
+  
+                  <div class="imagemAnuncio">
+                    <a href="#">
+                      <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/t/2/t231915.jpg" alt="">
+                    </a>
+                  </div>
+    
+                  <div class="botoes">
+    
+                    <div class="separacaoAnuncio">
+    
+                      <div class="blocoTexto">
+                        <div class="blocoTextoConjunto">
+    
+                        <div class="parteSuperiorBlocoTexto">
+                          <p>Headset Trust GXT 450</p>
+                        </div>
+    
+                        <div class="parteInferiorBlocoTexto">
+                          <p> R$179,90 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                        </div>
+    
+                        </div>
+                      </div>
+    
+                      <div class="botaoCarrinho">
+                      <a href="#" class="linkCarrinho">
+                        <div class="imgbutton">
+                          <img src="Img\Icones\shoppingMarket.png" alt="">
+                        </div>
+                      </a>
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+                <div class="bloco2">
+    
+                  <div class="imagemAnuncio">
+                    <a href="#">
+                      <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/1/0/100-100000252box2312.jpg" alt="">
+                    </a>
+                  </div>
+    
+                  <div class="botoes">
+    
+                    <div class="separacaoAnuncio">
+    
+                      <div class="blocoTexto">
+                        <div class="blocoTextoConjunto">
+    
+                        <div class="parteSuperiorBlocoTexto">
+                          <p>AMD Ryzen 5 5600G</p>
+                        </div>
+    
+                        <div class="parteInferiorBlocoTexto">
+                          <p> R$1.149,90 <div class="blocoPix"><div><p>20% Off</p></div></div></p>
+                        </div>
+    
+                        </div>
+                      </div>
+    
+                      <div class="botaoCarrinho">
+                      <a href="#" class="linkCarrinho">
+                        <div class="imgbutton">
+                          <img src="Img\Icones\shoppingMarket.png" alt="">
+                        </div>
+                      </a>
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+                <div class="bloco3">
+    
+                  <div class="imagemAnuncio">
+                    <a href="#">
+                      <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/m/a/mag-b560-tomahawk-wifi.jpg" alt="">
+                    </a>
+                  </div>
+    
+                  <div class="botoes">
+    
+                    <div class="separacaoAnuncio">
+    
+                      <div class="blocoTexto">
+                        <div class="blocoTextoConjunto">
+    
+                        <div class="parteSuperiorBlocoTexto">
+                          <p>Placa Mãe MSI MAG B560</p>
+                        </div>
+    
+                        <div class="parteInferiorBlocoTexto">
+                          <p> 1.799,90 <div class="blocoPix"><div><p>60% Off</p></div></div></p>
+                        </div>
+    
+                        </div>
+                      </div>
+    
+                      <div class="botaoCarrinho">
+                      <a href="#" class="linkCarrinho">
+                        <div class="imgbutton">
+                          <img src="Img\Icones\shoppingMarket.png" alt="">
+                        </div>
+                      </a>
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+              </div>
+          </div>
+  
+  
+          <div class="navigationInferior">
+            <label class="bar1" for="fileira5"></label>
+            <label class="bar2" for="fileira6"></label>
+          </div>
+  
+        </div>
+
+      </div>
+
+      <div class="blocoInferiorGrande">
+  
+        <div class="imagemAnuncioInferior">
+          <a href="#">
+            <img src="Img\Banner\cs.webp" alt="">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="parteInferior">
+
+      <div class="anunciosPequenosInferiores">
+
+        <div class="fileiraInferior">
+          <input type="radio" name="blocos" id="fileira7" checked>
+          <input type="radio" name="blocos" id="fileira8">
+  
+          <div class="conjunto s1">
+            <div class="conjuntoAnuncios">
+  
+              <div class="bloco1">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/3/0/301-00351-02.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Oculos Quest 2</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$5.499,99 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco2">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/81454/cadeira-gamer-alpha-gamer-vega-black_1608292452_g.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Cadeira Alpha Gamer Vega</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$1.299,90 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco3">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/180539/placa-de-video-gigabyte-geforce-rtx-3060-gaming-oc-12g-12-gb-gddr6-rev-2-0-ray-tracing-gv-3060gaming_1626461646_g.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>GeForce RTX 3060</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$3.299,99 <div class="blocoPix"><div><p>10% Off</p></div></div></p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+          </div>
+  
+          <div class="conjunto">
+              <div class="conjuntoAnuncios">
+    
+                <div class="bloco1">
+  
+                  <div class="imagemAnuncio">
+                    <a href="#">
+                      <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/k/6/k617-r-b-_pt-brown_7.jpg" alt="">
+                    </a>
+                  </div>
+    
+                  <div class="botoes">
+    
+                    <div class="separacaoAnuncio">
+    
+                      <div class="blocoTexto">
+                        <div class="blocoTextoConjunto">
+    
+                        <div class="parteSuperiorBlocoTexto">
+                          <p>Teclado Redragon FIZZ</p>
+                        </div>
+    
+                        <div class="parteInferiorBlocoTexto">
+                          <p> R$184,90 <div class="blocoPix"><div><p>5% Off</p></div></div></p>
+                        </div>
+    
+                        </div>
+                      </div>
+    
+                      <div class="botaoCarrinho">
+                      <a href="#" class="linkCarrinho">
+                        <div class="imgbutton">
+                          <img src="Img\Icones\shoppingMarket.png" alt="">
+                        </div>
+                      </a>
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+                <div class="bloco2">
+    
+                  <div class="imagemAnuncio">
+                    <a href="#">
+                      <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/z/n/zns-zcs100-rgb010123.jpg" alt="">
+                    </a>
+                  </div>
+    
+                  <div class="botoes">
+    
+                    <div class="separacaoAnuncio">
+    
+                      <div class="blocoTexto">
+                        <div class="blocoTextoConjunto">
+    
+                        <div class="parteSuperiorBlocoTexto">
+                          <p>Fita De Led ZINNIA CETUS</p>
+                        </div>
+    
+                        <div class="parteInferiorBlocoTexto">
+                          <p> R$109,90 <div class="blocoPix"><div><p>75% Off</p></div></div></p>
+                        </div>
+    
+                        </div>
+                      </div>
+    
+                      <div class="botaoCarrinho">
+                      <a href="#" class="linkCarrinho">
+                        <div class="imgbutton">
+                          <img src="Img\Icones\shoppingMarket.png" alt="">
+                        </div>
+                      </a>
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+                <div class="bloco3">
+    
+                  <div class="imagemAnuncio">
+                    <a href="#">
+                      <img src="https://media.pichau.com.br/media/catalog/product/cache/2f958555330323e505eba7ce930bdf27/m/a/mancer-aerostorm-intel-rtx-gtx-002_1_27.jpg" alt="">
+                    </a>
+                  </div>
+    
+                  <div class="botoes">
+    
+                    <div class="separacaoAnuncio">
+    
+                      <div class="blocoTexto">
+                        <div class="blocoTextoConjunto">
+    
+                        <div class="parteSuperiorBlocoTexto">
+                          <p>Computador Mancer ...</p>
+                        </div>
+    
+                        <div class="parteInferiorBlocoTexto">
+                          <p> R$5.769,84 <div class="blocoPix"><div><p>45% Off</p></div></div></p>
+                        </div>
+    
+                        </div>
+                      </div>
+    
+                      <div class="botaoCarrinho">
+                      <a href="#" class="linkCarrinho">
+                        <div class="imgbutton">
+                          <img src="Img\Icones\shoppingMarket.png" alt="">
+                        </div>
+                      </a>
+                      </div>
+    
+                    </div>
+    
+                  </div>
+    
+                </div>
+    
+              </div>
+          </div>
+  
+  
+          <div class="navigationInferior">
+            <label class="bar1" for="fileira7"></label>
+            <label class="bar2" for="fileira8"></label>
+          </div>
+  
+        </div>
+
+      </div>
+
+      <div class="blocoInferiorGrande">
+  
+        <div class="imagemAnuncioInferior">
+          <a href="#">
+            <img src="Img\Banner\lol.jpg" alt="">
+          </a>
+        </div>
+
+      </div>
+
+    </div>
+
+  </div>
+
+  <div class="bannerPequenoContainer">
+    <div class="bannersPequeno">
+    <div class="bannerimagem1">
+      <a href="#"><img src="Img\Banner\Banner1.png" alt=""></a>
+    </div>
+    <div class="bannerimagem2">
+      <a href="#"><img src="Img\Banner\Banner2.png" alt=""></a>
+    </div>
+    </div>
+  </div>
+
+  <div class="tituloAnuncios">
+    <h2>Seção Sonora</h2>
+  </div>
+
+  <div class="vitrine">
+
+    <div class="anuncios">
+      <div class="fileira">
+        <input type="radio" name="blocos" id="fileira9" checked>
+        <input type="radio" name="blocos" id="fileira10">
+
+        <div class="conjunto s1">
+          <div class="conjuntoAnuncios">
+
+            <div class="bloco1">
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="https://images.kabum.com.br/produtos/fotos/101288/microfone-gamer-hyperx-quadcast-antivibracao-led-preto-e-vermelho-hx-micqc-bk_1615553162_g.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>HyperX QuadCast</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$799,99 </p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="bloco2">
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/375500/Microfone-Gamer-Hyperx-Solocast-USB-Pedestal-Ajust-vel-Preto_1659358727_g.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>Hyperx Solocast</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$396,55 </p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="bloco3">
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/291282/Microfone-Hyperx-Quadcast-S_1656351180_g.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>Hyperx Quadcast S</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$1.990,00 </p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+            <div class="bloco4">
+
+              <div class="imagemAnuncio">
+                <a href="#">
+                  <img src="https://images.kabum.com.br/produtos/fotos/sync_mirakl/294925/Microfone-Soundcast-Dazz-Preto-Usb-2-0-Com-Espuma_1658930324_g.jpg" alt="">
+                </a>
+              </div>
+
+              <div class="botoes">
+
+                <div class="separacaoAnuncio">
+
+                  <div class="blocoTexto">
+                    <div class="blocoTextoConjunto">
+
+                    <div class="parteSuperiorBlocoTexto">
+                      <p>Soundcast Dazz Preto</p>
+                    </div>
+
+                    <div class="parteInferiorBlocoTexto">
+                      <p> R$215,78 </p>
+                    </div>
+
+                    </div>
+                  </div>
+
+                  <div class="botaoCarrinho">
+                  <a href="#" class="linkCarrinho">
+                    <div class="imgbutton">
+                      <img src="Img\Icones\shoppingMarket.png" alt="">
+                    </div>
+                  </a>
+                  </div>
+
+                </div>
+
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+
+        <div class="conjunto">
+            <div class="conjuntoAnuncios">
+  
+              <div class="bloco1">
+
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/115413/headset-gamer-redragon-lamia-rgb-drivers-40mm-h320rgb-1-_1595016849_g.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Headset Redragon Lamia 2</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$189,99 </p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco2">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/100118/100118_1549473567_index_g.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Headset Redragon Minos</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$189,99 </p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco3">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/335824/headset-gamer-redragon-hero-rgb-driver-de-53mm-p3-microfone-com-reducao-de-ruido-controlador-integrado-branco-com-vermelho-h530-r_1652449683_g.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Headset Redragon Hero</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$269,90 </p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+              <div class="bloco4">
+  
+                <div class="imagemAnuncio">
+                  <a href="#">
+                    <img src="https://images.kabum.com.br/produtos/fotos/130697/headset-gamer-redragon-ares-h120_1604414735_g.jpg" alt="">
+                  </a>
+                </div>
+  
+                <div class="botoes">
+  
+                  <div class="separacaoAnuncio">
+  
+                    <div class="blocoTexto">
+                      <div class="blocoTextoConjunto">
+  
+                      <div class="parteSuperiorBlocoTexto">
+                        <p>Headset Redragon Ares</p>
+                      </div>
+  
+                      <div class="parteInferiorBlocoTexto">
+                        <p> R$129,90 </p>
+                      </div>
+  
+                      </div>
+                    </div>
+  
+                    <div class="botaoCarrinho">
+                    <a href="#" class="linkCarrinho">
+                      <div class="imgbutton">
+                        <img src="Img\Icones\shoppingMarket.png" alt="">
+                      </div>
+                    </a>
+                    </div>
+  
+                  </div>
+  
+                </div>
+  
+              </div>
+  
+            </div>
+        </div>
+
+
+        <div class="navigation">
+          <label class="bar1" for="fileira9"></label>
+          <label class="bar2" for="fileira10"></label>
+        </div>
+
+      </div>
+    </div>
+
+  </div>
+
+  <div class="bannerLongoContainer">
+    <div class="bannerLongo">
+      <a href="#"><img src="Img\Banner\bannerLongo.png" alt=""></a>
+    </div>
+  </div>
+
+  <div class="tituloAnuncios">
+    <h2>Departamentos</h2>
+  </div>
+
+  <div class="blocoDepartamentos">
+
+    <div class="blocosPequenos">
+
+        <div class="conjuntoBlocosPequenosDeBaixo">
+
+          <div class="blocoPequeno1">
+
+            <a href="">
+              <img src="Img\Mercado\computador.jpg" alt="">
+            </a>
+
+            <a href="">
+              <div class="botoesPequenos">
+
+                  <div class="bloquinho">
+                    <p>Hardware</p>
+                  </div>
+
+              </div>
+            </a>
+
+          </div>
+
+          <div class="blocoPequeno2">
+
+            <a href="">
+              <img src="Img\Mercado\Perifericos.webp" alt="">
+            </a>
+
+            <a href="">
+              <div class="botoesPequenos2">
+
+                  <div class="bloquinho">
+                    <p>Periféricos</p>
+                  </div>
+
+              </div>
+            </a>
+
+          </div>
+
+          <div class="blocoPequeno3">
+
+            <a href="">
+              <img src="https://www.notebookcheck.info/fileadmin/Notebooks/News/_nc3/Untitled1367.png" alt="">
+            </a>
+
+            <a href="">
+              <div class="botoesPequenos2">
+
+                  <div class="bloquinho">
+                    <p>Smartphones</p>
+                  </div>
+
+              </div>
+            </a>
+
+          </div>
+
+          <div class="blocoPequeno4">
+
+            <a href="">
+              <img src="https://t.ctcdn.com.br/_ALSW0x5t7hbdO7pVxYqXW84Auc=/512x288/smart/filters:format(webp)/i570476.png" alt="">
+            </a>
+
+            <a href="">
+              <div class="botoesPequenos">
+
+                  <div class="bloquinho">
+                    <p>Consoles e Jogos</p>
+                  </div>
+
+              </div>
+            </a>
+
+          </div>
+
+          
+        </div>
+
+    </div>
+
+  </div>
+
+  </div>
+
+  <div class="footer">
+
+    <div class="menusFooter">
+
+      <div class="sectionMenuFooter">
+        <div class="t1">
+          <p>Novidades</p>
+        </div>
+
+        <div class="l1">
+          <a href="#">Hardware</a>
+          <a href="#">Celular e Smartphone</a>
+          <a href="#">Periféricos</a>
+          <a href="#">Teclado e Mouse</a>
+          <a href="#">Computadores</a>
+          <a href="#">Placa de Vídeo</a>
+          <a href="#">Monitores</a>
+          <a href="#">Consoles e Games</a>
+          <a href="#">Áudio</a>
+          <a href="#">Smart TV</a>
+          <a href="#">Móveis</a>
+          <a href="#">Eletrodomésticos</a>
+        </div>
+
+      </div>
+
+      <div class="sectionMenuFooter">
+        <div class="t1">
+          <p>Serviços</p>
+        </div>
+
+        <div class="l1">
+          <a href="#">Seja Prime</a>
+          <a href="#">Black Friday</a>
+          <a href="#">Mega Maio</a>
+          <a href="#">Julho Gamer</a>
+          <a href="#">Pix</a>
+          <a href="#">Oferta do dia</a>
+          <a href="#">Openbox</a>
+        </div>
+      </div>
+
+      <div class="sectionMenuFooter">
+        <div class="t1">
+          <p>Para Empresas</p>
+        </div>
+
+        <div class="l1">
+          <a href="#">Carreiras</a>
+          <a href="#">Notícias da empresa</a>
+          <a href="#">Privacidade</a>
+          <a href="#">Investidores</a>
+          <a href="#">Diversidade e inclusão</a>
+          <a href="#">Acessibilidade</a>
+          <a href="#">Sustentabilidade</a>
+        </div>
+      </div>
+
+      <div class="sectionMenuFooter">
+        <div class="t1">
+          <p>Ajuda</p>
+        </div>
+
+        <div class="l1">
+          <a href="#">SAC</a>
+          <a href="#">Fale conosco</a>
+          <a href="#">Termos de aceite</a>
+          <a href="#">Políticas de Privacidade</a>
+        </div>
+      </div>
+
+      <div class="sectionMenuFooter">
+
+        <div class="t1">
+          <p>Sobre</p>
+        </div>
+
+        <div class="l1">
+          <h6>Horário de atendimento:</h6>
+          <p>08:00 às 20:00 -</p>
+          <p>Segunda a Sábado,</p>
+          <p>horário de Brasília</p>
+          <p>(Exceto domingo e feriados, em Limeira-SP)</p>
+
+          <h6>Endereço:</h6>
+          <p>Rua Carlos Gomes, 1321 -</p>
+          <p> 9° andar - Centro</p>
+          <p>imeira/SP - CEP: 13480-010</p>
+
+          <h6>Central SAC:</h6>
+          <a href="#">(19) 2114-4444</a>
+
+          <h6>E-mail:</h6>
+          <a href="#">faleconosco@kabum.com.br</a>
+        </div>
+
+      </div>
+
+      <div class="sectionSocialFooter">
+
+        <div class="t1">
+          <p>Minha Conta</p>
+        </div>
+
+        <div class="l1M">
+          <a href="#">Meus Pedidos</a>
+          <a href="#">Cadastrar ou Remover Newsletter</a>
+        </div>
+
+        <div class="sectionSocialFooter1">
+          <div class="t1">
+            <p>Redes Sociais</p>
+          </div>
+  
+          <div class="l1">
+            <a href="#"><img src="Img\Icones\redes.png"></a>
+          </div>
+        </div>
+  
+        <div class="sectionSocialFooter1">
+          <div class="t1">
+            <p>Baixe nosso app:</p>
+          </div>
+  
+          <div class="l1">
+            <a href="#"><img src="Img\Icones\play.png"></a>
+          </div>
+
+        </div>
+
+      </div>
+
+    </div>
+
+    <div class="rodape">
+
+      <div class="textoEsquerdaRodape">
+        <p>Copyright © 2022. Todos os direitos reservados.</p>
+      </div>
+
+      
+      <div class="textoDireitaRodape">
+        <div class="pais">
+          <p>Brasil</p>
+        </div>
+      </div>
+
+    </div>
+
+  </div>
+  
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js" integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa" crossorigin="anonymous"></script>
+
+</body>
+</html>
