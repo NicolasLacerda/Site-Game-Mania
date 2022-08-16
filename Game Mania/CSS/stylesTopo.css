@@ -1,0 +1,339 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+body{
+    background-color: #181818;
+    width: 100%;
+}
+
+.topo{
+    background-color: gainsboro;
+}
+
+.sliderPosition {
+    margin-left: 200px;
+    margin-right: 200px;
+}
+
+#navBar{
+    display: flex;
+    height: 90px;
+    width: 100%;
+    align-items: center;
+    justify-content: space-between;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.textMenu {
+    background-color: #ED9121;
+    width: 100%;
+    height: 30px;
+    top: 50px;
+    z-index: 1;
+    display: flex;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.textMenu ul{
+    list-style: none;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+    border-right: solid #dda969 0.5px;
+    border-left: solid #dda969 0.5px;
+}
+
+.textMenu li{
+    width: 20%;
+    color: gainsboro;
+    text-decoration: none;
+    font-size: 20px;
+    transition: color 0.3s;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-right: 5px;
+    padding-left: 5px;
+    cursor: pointer;
+}
+
+.textMenu li:not(:last-child){
+    border-right: solid #dda969 0.5px;
+}
+
+.textMenu li:hover {
+    color: #181818;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.logo img{
+    height: 45px;
+    width: 45px;
+}
+
+.logoPosition {
+    height: 100%;
+    width: 160.25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
+.logoPosition a{
+    color: gainsboro;
+    text-decoration: none;
+    display: flex;
+}
+
+.logoPosition a:hover{
+    color: white;
+}
+
+.logoImg {
+    -webkit-font-smoothing: antialiased;
+}
+
+.caixaDePesquisa {
+    width: fit-content;
+    display: flex;
+    align-items: center;
+}
+
+.caixaDePesquisa input{
+    display: flex;
+    width: 550px;
+    height: 30px;
+    border-radius: 5px 0px 0px 5px;
+    border: none;
+    background: white;
+    color: black;
+    outline: none;
+    font-size: 15px;
+    padding-left: 10px;
+}
+
+.caixaDePesquisa .icon3 {
+    padding: 14px;
+    background-color: white;
+    background-image: url(https://images2.imgbox.com/de/89/AnmgqByn_o.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.3s;
+    -webkit-font-smoothing: antialiased;
+    border: solid white 1px;
+    border-radius: 0px 5px 5px 0px;
+}
+
+.iconPosition{
+    display: flex;
+    height: 100%;
+    align-items: center;
+    width: 160.25px;
+    justify-content: end;
+}
+
+.iconPosition #icon1 {
+    padding: 20px;
+    background-image: url(https://images2.imgbox.com/3f/f5/9WrHGjiL_o.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.3s;
+    -webkit-font-smoothing: antialiased;
+    background-color: white;
+    border-radius: 50%;
+    margin-right: 10px;
+    cursor: pointer;
+}
+
+.iconPosition #icon1:hover{
+    background-image: url(https://i.im.ge/2022/08/15/OFxMxX.miniBolsaPreta.png);
+}
+
+.iconPosition .icon2 {
+    padding: 20px;
+    background-image: url(https://images2.imgbox.com/79/5c/uPpmY5Ue_o.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    transition: 0.3s;
+    border-radius: 50%;
+    background-color: white;
+    -webkit-font-smoothing: antialiased;
+}
+
+.iconPosition .icon2:hover {
+    background-image: url(https://i.im.ge/2022/08/15/OFxuuD.miniPerfilPreto.png);
+}
+
+.carrinhoPosition {
+    height: 500px;
+    width: fit-content;
+    margin-top: 10px;
+    margin-right: 10px;
+    right: 0;
+    position: absolute;
+    z-index: 3;
+}
+
+#carrinho {
+    background-color: white;
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 10px;
+    -webkit-font-smoothing: antialiased;
+    transition: 0.3s;
+}
+
+#exitCarrinho {
+    height: 35px;
+    width: 35px;
+    position: absolute;
+    cursor: pointer;
+    margin-top: 5px;
+    margin-left: 5px;
+}
+
+#exitCarrinho img{
+    height: -webkit-fill-available;
+    width: -webkit-fill-available;
+    -webkit-font-smoothing: antialiased;
+}
+
+.emptyBag {
+    width: 100%;
+    height: calc(100% - 35px);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.slider {
+    height: 600px;
+    width: 100%;
+    overflow: hidden;
+}
+
+.slides{
+    display: flex;
+    width: 500%;
+    height: 100%;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide {
+    width: 20%;
+    position: relative;
+    transition: 1s;
+}
+
+.slides img {
+    width: 100%;
+    height: 100%;
+}
+
+.manual-navigation {
+    position: absolute;
+    top: 680px;
+    width: 80%;
+    justify-content: center;
+    display: flex;
+}
+
+.manual-btn {
+    padding: 4px;
+    border: 2px solid white;
+    border-radius: 100%;
+    cursor: pointer;
+    transition: 0.3s;
+}
+
+.manual-btn:not(:last-child){
+    margin-right: 10px;
+}
+
+.manual-btn:hover {
+    background-color: white;
+}
+
+#radio1:checked ~ .first {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .first {
+    margin-left: -40%;
+}
+
+#radio4:checked ~ .first {
+    margin-left: -60%;
+}
+
+#radio5:checked ~ .first {
+    margin-left: -80%;
+}
+
+.textoCarroussel{
+    position: absolute;
+    z-index: 2;
+    width: 100%;
+    bottom: 35%;
+    padding-left: 200px;
+    padding-right: 200px;
+}
+
+.bot{
+    display: block;
+    width: fit-content;
+    height: 45px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFF;
+    padding: 10px;
+    text-decoration: none;
+    margin-left: 4px;
+    color: black;
+}
+
+.bot:hover{
+    background-color: transparent;
+    color: white;
+    border: solid 1px white;
+}
+
+.titulo{
+    display: block;
+    color: #FFF;
+    margin-bottom: 20px;
+    height: 55px;
+    font-size: 20px;
+}
+
+.subTitulo{
+    height: 40px;
+    display: block;
+    color: #FFF;
+    margin-bottom: 20px;
+    font-size: 20px;
+    margin-left: 4px;
+}
