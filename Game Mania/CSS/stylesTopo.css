@@ -15,11 +15,6 @@ body{
     background-color: gainsboro;
 }
 
-.sliderPosition {
-    margin-left: 200px;
-    margin-right: 200px;
-}
-
 #navBar{
     display: flex;
     height: 90px;
@@ -179,118 +174,149 @@ body{
 }
 
 .carrinhoPosition {
-    height: 500px;
+    height: calc(100vh - 110px);
     width: fit-content;
     margin-top: 10px;
     margin-right: 10px;
     right: 0;
     position: absolute;
-    z-index: 3;
+    z-index: 4;
 }
 
 #carrinho {
-    background-color: white;
+    background-color: gainsboro;
     width: 300px;
     height: 100%;
     flex-direction: column;
-    border-radius: 10px;
+    border-radius: 5px;
     -webkit-font-smoothing: antialiased;
-    transition: 0.3s;
 }
 
 #exitCarrinho {
-    height: 35px;
-    width: 35px;
-    position: absolute;
-    cursor: pointer;
-    margin-top: 5px;
-    margin-left: 5px;
+    width: 100%;
+    height: 45px;
+    padding: 10px;
 }
 
 #exitCarrinho img{
-    height: -webkit-fill-available;
-    width: -webkit-fill-available;
+    height: 25px;
+    width: 25px;
+    cursor: pointer;
     -webkit-font-smoothing: antialiased;
 }
 
-.emptyBag {
+.itensComprados {
     width: 100%;
-    height: calc(100% - 35px);
+    height: calc(100% - 45px);
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     flex-direction: column;
 }
 
-.slider {
-    height: 600px;
+.emptyBagPosition{
+    height: 100%;
     width: 100%;
-    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 20px;
 }
 
-.slides{
+.emptyBag {
+    height: 100%;
+    width: 100%;
     display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.emptyBag img{
+    -webkit-font-smoothing: antialiased;
+    width: 115px;
+    height: 160px;
+}
+
+.emptyBagPosition p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container {
+    margin-left: 200px;
+    margin-right: 200px;
+    position: relative;
+    overflow: hidden;
+    height: 600px;
+}
+
+.slide-container {
+    height: 100%;
     width: 500%;
+    position: relative;
+    display: flex;
+}
+
+.slide-container .slide img {
+    width: 100%;
     height: 100%;
 }
 
-.slides input {
-    display: none;
-}
-
-.slide {
+.slide-container .slide {
     width: 20%;
-    position: relative;
+    height: 100%;
+    display: flex;
     transition: 1s;
 }
 
-.slides img {
+.carouselButtons{
+    position: absolute;
+    top: 50%;
     width: 100%;
-    height: 100%;
+    height: fit-content;
+    justify-content: space-between;
+    display: flex;
+    z-index: 3;
+    align-items: center;
 }
 
-.manual-navigation {
-    position: absolute;
-    top: 680px;
-    width: 80%;
-    justify-content: center;
+#prev {
+    width: 40px;
+    height: 40px;
+    cursor: pointer;
+    background-color: transparent;
+    border: none;
+    transform: rotate(180deg);
+    align-items: center;
     display: flex;
 }
 
-.manual-btn {
-    padding: 4px;
-    border: 2px solid white;
-    border-radius: 100%;
+#next {
+    width: 40px;
+    height: 40px;
     cursor: pointer;
-    transition: 0.3s;
+    background-color: transparent;
+    border: none;
+    align-items: center;
+    display: flex;
 }
 
-.manual-btn:not(:last-child){
-    margin-right: 10px;
+.slide-container .active{
+    display: flex;
 }
 
-.manual-btn:hover {
-    background-color: white;
-}
-
-#radio1:checked ~ .first {
+#radio1:checked ~ .active {
     margin-left: 0;
 }
 
-#radio2:checked ~ .first {
+#radio2:checked ~ .active {
     margin-left: -20%;
 }
 
-#radio3:checked ~ .first {
+#radio3:checked ~ .active {
     margin-left: -40%;
-}
-
-#radio4:checked ~ .first {
-    margin-left: -60%;
-}
-
-#radio5:checked ~ .first {
-    margin-left: -80%;
 }
 
 .textoCarroussel{
@@ -300,9 +326,10 @@ body{
     bottom: 35%;
     padding-left: 200px;
     padding-right: 200px;
+    animation:image .4s linear;
 }
 
-.bot{
+.textoCarroussel .bot{
     display: block;
     width: fit-content;
     height: 45px;
@@ -315,13 +342,13 @@ body{
     color: black;
 }
 
-.bot:hover{
+.textoCarroussel .bot:hover{
     background-color: transparent;
     color: white;
     border: solid 1px white;
 }
 
-.titulo{
+.textoCarroussel .titulo{
     display: block;
     color: #FFF;
     margin-bottom: 20px;
@@ -329,7 +356,7 @@ body{
     font-size: 20px;
 }
 
-.subTitulo{
+.textoCarroussel .subTitulo{
     height: 40px;
     display: block;
     color: #FFF;

@@ -1,31 +1,48 @@
-let buttonCarrinho = document.getElementById("icon1");
-
-buttonCarrinho.addEventListener("click", function() {
-
-    let carrinho = document.getElementById("carrinho");
-
-    if(carrinho.style.display === "none") {
-        carrinho.style.display = "flex";
-    }
-
-    else {
-        carrinho.style.display = "none";
-    }
-
+$('#icon1').click(function(){
+    $('.carrinhoPosition').animate({width:'toggle'},300);;
 });
 
-let buttonInteriorCarrinho = document.getElementById("exitCarrinho");
+$('#exitCarrinho').click(function(){
+    $('.carrinhoPosition').animate({width:'hide'},300);;
+});
 
-buttonInteriorCarrinho.addEventListener("click", function() {
+//botão carrinho
+// $('.marketButton').click(function(){
+//     $('.emptyBagPosition').remove();
+// });
 
-    let carrinho = document.getElementById("carrinho");
+let radio = document.getElementsByClassName("btnSlider")
+let numberRadio = radio.length
 
-    if(carrinho.style.display === "none") {
-        carrinho.style.display = "flex";
+let i = 0
+console.log(i)
+
+$(document).ready(function(){
+
+$('#next').click(function(){
+
+    if(i<=1){
+        i++;
     }
 
-    else {
-        carrinho.style.display = "none";
+    else if (i=2){
+        i=0;
     }
+
+    $(radio[i]).prop('checked', true);
+});
+
+$('#prev').click(function(){
+
+    if(i>=1){
+        i--;
+    }
+    
+    else if (i=1){
+        i=2;
+    }
+
+    $(radio[i]).prop('checked', true);
+});
 
 });

@@ -40,17 +40,25 @@
 
     </nav>
 
-    <div class="carrinhoPosition">
+    <div class="carrinhoPosition" style="display: none;">
 
-      <div id="carrinho" style="display: none;">
+      <div id="carrinho">
 
         <div id="exitCarrinho">
-          <img src="https://icon-library.com/images/x-icon-vector/x-icon-vector-0.jpg">
+          <img src="Img\Icones\x.png">
         </div>
 
-        <div class="emptyBag">
-          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-1EJVIvapH8_xAahIbCZPgPldE-nDo57Gd2Th3j1vvKCsI2xL1a7-FgDU3ylRNVKMnHM&usqp=CAU">
-          <p>Seu Carrinho está vazio.</p>
+        <div class="itensComprados">
+
+          <div class="emptyBagPosition">
+            
+            <div class="emptyBag">
+              <img src="Img\Icones\Bolsa\Bag 2.png">
+            </div>
+
+            <p>Seu Carrinho está vazio.</p>
+          </div>
+
         </div>
 
       </div>
@@ -70,19 +78,15 @@
 
   </div>
 
-  <div class="sliderPosition">
+  <div class="container">
 
-    <div class="slider">
+    <div class="slide-container">
 
-      <div class="slides">
+      <input class="btnSlider" type="radio" name="radio-btn" id="radio1">
+      <input class="btnSlider" type="radio" name="radio-btn" id="radio2">
+      <input class="btnSlider" type="radio" name="radio-btn" id="radio3">
 
-          <input type="radio" name="radio-btn" id="radio1">
-          <input type="radio" name="radio-btn" id="radio2">
-          <input type="radio" name="radio-btn" id="radio3">
-          <input type="radio" name="radio-btn" id="radio4">
-          <input type="radio" name="radio-btn" id="radio5">
-  
-          <div class="slide first">
+      <div class="slide active">
             <img class="image1" src="Img\Caroussel\1.jpg" alt="">
               <div class="textoCarroussel">
                 <div class="titulo">
@@ -93,9 +97,9 @@
                 </div>
                   <a class="bot" href="#">Explore esse mundo</a>
               </div>
-          </div>
+      </div>
   
-          <div class="slide">
+      <div class="slide">
             <img src="Img\Caroussel\2.png" alt="">
               <div class="textoCarroussel">
                 <div class="titulo">
@@ -106,9 +110,9 @@
                 </div>
                   <a class="bot" href="#">Venha Jogar</a>
             </div>
-          </div>
+      </div>
   
-          <div class="slide">
+      <div class="slide">
             <img src="https://multiversomais.com/wp-content/uploads/2021/03/CSGO-Gamers-Club-reformula-as-ligas-mensais.png" alt="">
               <div class="textoCarroussel">
                 <div class="titulo">
@@ -119,44 +123,13 @@
                 </div>
                   <a class="bot" href="#">Conheça mais</a>
               </div>
-          </div>
-  
-          <div class="slide">
-            <img src="https://images.macrumors.com/t/QpPNDAa66M2Cf1Yg--e-Ddnude8=/2212x/article-new/2022/06/macbook-pro-m2-now-available-feature.jpg" alt="">
-              <div class="textoCarroussel">
-                <div class="titulo">
-                  <h1>Macbook Pro M2</h1>
-                </div>
-                <div class="subTitulo">
-                  <p>Compacto, leve e poderoso.</p>
-                </div>
-                  <a class="bot" href="#">Compre já</a>
-              </div>
-          </div>
-  
-        <div class="slide">
-          <img src="https://t2.tudocdn.net/617563?w=1920" alt="">
-            <div class="textoCarroussel">
-              <div class="titulo">
-                <font color="#000" ><h1>Seu celular dos sonhos</h1></font>
-              </div>
-              <div class="subTitulo">
-                <font color="#000" ><p>Finalmente pode ser seu.</p></font>
-              </div>
-                <a class="bot" href="#">Explore esse mundo</a>
-            </div>
-        </div>
+      </div>
+        
+    </div>
 
-        </div>
-
-        <div class="manual-navigation">
-          <label class="manual-btn" for="radio1"></label>
-          <label class="manual-btn" for="radio2"></label>
-          <label class="manual-btn" for="radio3"></label>
-          <label class="manual-btn" for="radio4"></label>
-          <label class="manual-btn" for="radio5"></label>
-        </div>
-
+    <div class="carouselButtons">
+        <div id="prev"><img src="https://i.im.ge/2022/08/10/FH3x1z.seta.png"></div>
+        <div id="next"><img src="https://i.im.ge/2022/08/10/FH3x1z.seta.png"></div>
     </div>
 
   </div>
@@ -2919,6 +2892,8 @@
     </div>
 
   </div>
+
+  <script src="js\jquery-3.6.0.js"></script>
 
 </body>
 </html>

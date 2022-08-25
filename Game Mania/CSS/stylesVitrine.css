@@ -189,6 +189,8 @@ input {
 
 .imagemAnuncio img:hover{
     transform: scale(1.05);
+    transition-duration: 1s;
+    transition-delay: 0.5s;
 }
 
 .imagemAnuncio a{
