@@ -20,14 +20,14 @@
     display: flex;
 }
 
-.carousselPosition1 {
+.carouselPosition1 {
     height: 400px;
     width: 70%;
     display: block;
     overflow: hidden;
 }
 
-.carousselPosition2 {
+.carouselPosition2 {
     height: 400px;
     width: 70%;
     display: block;

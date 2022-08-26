@@ -5,14 +5,19 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Game Mania</title>
-    <link rel="icon" type="image/x-icon" href="Img\Icones\logoMenor.png">
+    <link rel="icon" type="image/x-icon" href="Img\Icones\LogoPequena\logoMenor.png">
     <link rel="stylesheet" type="text/css" href="CSS\stylesTopo.css" media="screen">
     <link rel="stylesheet" type="text/css" href="CSS\stylesCorpo1.css" media="screen">
     <link rel="stylesheet" type="text/css" href="CSS\stylesVitrine.css" media="screen">
     <link rel="stylesheet" type="text/css" href="CSS\stylesVitrinePequena.css" media="screen">
     <link rel="stylesheet" type="text/css" href="CSS\stylesCorpo2.css" media="screen">
     <link rel="stylesheet" type="text/css" href="CSS\stylesFooter.css" media="screen">
-    <script src="./js/script.js" defer></script>
+    <link rel="stylesheet" type="text/css" href="CSS\stylesCarousel.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="CSS\stylesBars.css" media="screen">
+    <link rel="stylesheet" type="text/css" href="CSS\stylesFileiras.css" media="screen">
+    <script src="./js/scriptVitrine.js" defer></script>
+    <script src="./js/scriptTopo.js" defer></script>
+    <script src="./js/scriptCarousel.js" defer></script>
 </head>
 <body>
 
@@ -128,8 +133,14 @@
     </div>
 
     <div class="carouselButtons">
-        <div id="prev"><img src="https://i.im.ge/2022/08/10/FH3x1z.seta.png"></div>
-        <div id="next"><img src="https://i.im.ge/2022/08/10/FH3x1z.seta.png"></div>
+        <div id="prev"></div>
+        <div id="next"></div>
+    </div>
+
+    <div class="carouselDots">
+      <div class="dot active"></div>
+      <div class="dot"></div>
+      <div class="dot"></div>
     </div>
 
   </div>
@@ -153,12 +164,13 @@
 
   <section class="vitrine">
 
-    <div class="carousselPosition">
-      <div class="caroussel">
-        <input type="radio" name="blocos" id="caroussel1" checked>
-        <input type="radio" name="blocos" id="caroussel2">
+    <div class="bar1"></div>
 
-        <div class="fileira s1">
+    <div class="carouselPosition">
+
+      <div class="carousel">
+
+        <div class="fileira1">
 
           <div class="blockPosition">
 
@@ -167,13 +179,7 @@
               <div class="topItens">
                   <div class="heartPosition">
 
-                    <div class="coracaoVazio" style="display: flex;">
-                      <img src="Img\Icones\coracaoVazio.png">
-                    </div>
-
-                    <div class="coracaoCheio" style="display: none;">
-                      <img src="Img\Icones\coracao.png">
-                    </div>
+                    <div class="coracao"></div>
 
                   </div>
               </div>
@@ -230,13 +236,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -293,13 +293,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -356,13 +350,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -418,7 +406,7 @@
 
         </div>
 
-        <div class="fileira">
+        <div class="fileira2">
 
           <div class="blockPosition">
 
@@ -427,13 +415,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -490,13 +472,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -553,13 +529,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -616,13 +586,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -678,14 +642,12 @@
 
         </div>
 
-        
-        <div class="navigation">
-          <label class="bar1" for="caroussel1"></label>
-          <label class="bar2" for="caroussel2"></label>
-        </div>
 
       </div>
+
     </div>
+
+    <div class="bar2"></div>
 
   </section>
 
@@ -700,12 +662,13 @@
 
   <section class="vitrine">
 
-    <div class="carousselPosition">
-      <div class="caroussel">
-        <input type="radio" name="blocos" id="caroussel3" checked>
-        <input type="radio" name="blocos" id="caroussel4">
+    <div class="bar3"></div>
 
-        <div class="fileira s1">
+    <div class="carouselPosition">
+
+      <div class="carousel">
+
+        <div class="fileira3">
 
           <div class="blockPosition">
 
@@ -714,13 +677,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -777,13 +734,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -840,13 +791,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -903,13 +848,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -965,7 +904,7 @@
 
         </div>
 
-        <div class="fileira">
+        <div class="fileira4">
 
           <div class="blockPosition">
 
@@ -974,13 +913,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -1037,13 +970,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -1100,13 +1027,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -1163,13 +1084,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -1225,14 +1140,10 @@
 
         </div>
 
-
-        <div class="navigation">
-          <label class="bar1" for="caroussel3"></label>
-          <label class="bar2" for="caroussel4"></label>
-        </div>
-
       </div>
     </div>
+
+    <div class="bar4"></div>
 
   </section>
 
@@ -1255,27 +1166,22 @@
 
     <div class="vitrineSuperior">
 
-      <div class="carousselPosition1">
-        <div class="caroussel">
-        <input type="radio" name="blocos" id="caroussel5" checked>
-        <input type="radio" name="blocos" id="caroussel6">
+      <div class="bar5"></div>
 
-        <div class="fileira s1">
+      <div class="carouselPosition1">
 
-          <div class="blockPosition">
+        <div class="carousel">
 
-            <div class="bloco5">
+          <div class="fileira5">
+
+            <div class="blockPosition">
+
+              <div class="bloco5">
 
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -1325,20 +1231,14 @@
 
               </div>
 
-            </div>
+              </div>
 
-            <div class="bloco6">
+              <div class="bloco6">
 
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -1388,20 +1288,14 @@
 
               </div>
 
-            </div>
+              </div>
 
-            <div class="bloco7">
+              <div class="bloco7">
 
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -1451,13 +1345,13 @@
 
               </div>
 
+              </div>
+
             </div>
 
           </div>
 
-        </div>
-
-        <div class="fileira">
+          <div class="fileira6">
 
           <div class="blockPosition">
 
@@ -1466,13 +1360,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -1529,13 +1417,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -1592,13 +1474,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -1652,16 +1528,13 @@
 
           </div>
 
-        </div>
-
-
-        <div class="navigation">
-          <label class="bar1" for="caroussel5"></label>
-          <label class="bar2" for="caroussel6"></label>
-        </div>
+          </div>
 
         </div>
+
       </div>
+
+      <div class="bar6"></div>
 
       <div class="squareBannerPosition">
           <a href="#"><img class="squareBanner" src="Img\Banner\bannerQuadrado2.jpg" alt=""></a>
@@ -1671,12 +1544,13 @@
 
     <div class="vitrineInferior">
 
-      <div class="carousselPosition2">
-        <div class="caroussel">
-          <input type="radio" name="blocos" id="caroussel7" checked>
-          <input type="radio" name="blocos" id="caroussel8">
+      <div class="bar7"></div>
+
+      <div class="carouselPosition2">
+
+        <div class="carousel">
   
-          <div class="fileira s1">
+          <div class="fileira7">
 
             <div class="blockPosition">
 
@@ -1685,13 +1559,7 @@
               <div class="topItens">
                   <div class="heartPosition">
   
-                    <div class="coracaoVazio" style="display: flex;">
-                      <img src="Img\Icones\coracaoVazio.png">
-                    </div>
-  
-                    <div class="coracaoCheio" style="display: none;">
-                      <img src="Img\Icones\coracao.png">
-                    </div>
+                    <div class="coracao"></div>
   
                   </div>
               </div>
@@ -1748,13 +1616,7 @@
               <div class="topItens">
                   <div class="heartPosition">
   
-                    <div class="coracaoVazio" style="display: flex;">
-                      <img src="Img\Icones\coracaoVazio.png">
-                    </div>
-  
-                    <div class="coracaoCheio" style="display: none;">
-                      <img src="Img\Icones\coracao.png">
-                    </div>
+                    <div class="coracao"></div>
   
                   </div>
               </div>
@@ -1811,13 +1673,7 @@
               <div class="topItens">
                   <div class="heartPosition">
   
-                    <div class="coracaoVazio" style="display: flex;">
-                      <img src="Img\Icones\coracaoVazio.png">
-                    </div>
-  
-                    <div class="coracaoCheio" style="display: none;">
-                      <img src="Img\Icones\coracao.png">
-                    </div>
+                    <div class="coracao"></div>
   
                   </div>
               </div>
@@ -1873,7 +1729,7 @@
   
           </div>
   
-          <div class="fileira">
+          <div class="fileira8">
   
             <div class="blockPosition">
   
@@ -1882,13 +1738,7 @@
               <div class="topItens">
                   <div class="heartPosition">
   
-                    <div class="coracaoVazio" style="display: flex;">
-                      <img src="Img\Icones\coracaoVazio.png">
-                    </div>
-  
-                    <div class="coracaoCheio" style="display: none;">
-                      <img src="Img\Icones\coracao.png">
-                    </div>
+                    <div class="coracao"></div>
   
                   </div>
               </div>
@@ -1945,13 +1795,7 @@
               <div class="topItens">
                   <div class="heartPosition">
   
-                    <div class="coracaoVazio" style="display: flex;">
-                      <img src="Img\Icones\coracaoVazio.png">
-                    </div>
-  
-                    <div class="coracaoCheio" style="display: none;">
-                      <img src="Img\Icones\coracao.png">
-                    </div>
+                    <div class="coracao"></div>
   
                   </div>
               </div>
@@ -2008,13 +1852,7 @@
               <div class="topItens">
                   <div class="heartPosition">
   
-                    <div class="coracaoVazio" style="display: flex;">
-                      <img src="Img\Icones\coracaoVazio.png">
-                    </div>
-  
-                    <div class="coracaoCheio" style="display: none;">
-                      <img src="Img\Icones\coracao.png">
-                    </div>
+                    <div class="coracao"></div>
   
                   </div>
               </div>
@@ -2070,15 +1908,12 @@
   
           </div>
   
-  
-          <div class="navigation">
-            <label class="bar1" for="caroussel7"></label>
-            <label class="bar2" for="caroussel8"></label>
-          </div>
-  
         </div>
+
       </div>
   
+      <div class="bar8"></div>
+
       <div class="squareBannerPosition">
         <a href="#"><img class="squareBanner" src="Img\Banner\bannerQuadrado1.png" alt=""></a>
       </div>
@@ -2086,12 +1921,6 @@
     </div>
 
   </section>
-
-  <div class="bannerLongoContainer">
-    <div class="bannerLongo">
-      <a href="#"><img src="Img\Banner\Banner4.jpg" alt=""></a>
-    </div>
-  </div>
 
   <div class="tituloAnuncios">
     <div class="blockTitle">
@@ -2104,12 +1933,12 @@
 
   <section class="vitrine">
 
-    <div class="carousselPosition">
-      <div class="caroussel">
-        <input type="radio" name="blocos" id="caroussel9" checked>
-        <input type="radio" name="blocos" id="caroussel10">
+    <div class="bar9"></div>
 
-        <div class="fileira s1">
+    <div class="carouselPosition">
+      <div class="carousel">
+
+        <div class="fileira9">
 
           <div class="blockPosition">
 
@@ -2118,13 +1947,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -2181,13 +2004,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -2244,13 +2061,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -2307,13 +2118,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -2369,7 +2174,7 @@
 
         </div>
 
-        <div class="fileira">
+        <div class="fileira10">
 
           <div class="blockPosition">
 
@@ -2378,13 +2183,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -2441,13 +2240,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -2504,13 +2297,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -2567,13 +2354,7 @@
               <div class="topItens">
                 <div class="heartPosition">
 
-                  <div class="coracaoVazio" style="display: flex;">
-                    <img src="Img\Icones\coracaoVazio.png">
-                  </div>
-
-                  <div class="coracaoCheio" style="display: none;">
-                    <img src="Img\Icones\coracao.png">
-                  </div>
+                  <div class="coracao"></div>
 
                 </div>
               </div>
@@ -2629,14 +2410,10 @@
 
         </div>
 
-
-        <div class="navigation">
-          <label class="bar1" for="caroussel9"></label>
-          <label class="bar2" for="caroussel10"></label>
-        </div>
-
       </div>
     </div>
+
+    <div class="bar10"></div>
 
   </section>
 
