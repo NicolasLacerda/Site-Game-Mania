@@ -23,6 +23,7 @@ body{
     justify-content: space-between;
     padding-left: 200px;
     padding-right: 200px;
+    transition: ease all .5s;
 }
 
 .textMenu {
@@ -68,6 +69,14 @@ body{
     color: #181818;
 }
 
+.logoPosition {
+    height: 100%;
+    width: 160.25px;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+}
+
 .logo {
     display: flex;
     justify-content: center;
@@ -78,47 +87,55 @@ body{
 .logo img{
     height: 45px;
     width: 45px;
-}
-
-.logoPosition {
-    height: 100%;
-    width: 160.25px;
-    display: flex;
-    justify-content: start;
-    align-items: center;
-}
-
-.logoPosition a{
-    color: gainsboro;
-    text-decoration: none;
-    display: flex;
-}
-
-.logoPosition a:hover{
-    color: white;
-}
-
-.logoImg {
     -webkit-font-smoothing: antialiased;
 }
 
-.caixaDePesquisa {
-    width: fit-content;
+.caixaDePesquisaPosition{
+    position: relative;
+    width: 580px;
+    height: 350px;
     display: flex;
+    flex-direction: column;
     align-items: center;
+    top: 160px;
+}
+
+.caixaDePesquisa {
+    display: flex;
+    width: -webkit-fill-available;
+    height: 30px;
+    z-index: 7;
 }
 
 .caixaDePesquisa input{
     display: flex;
-    width: 550px;
+    width: 95%;
     height: 30px;
-    border-radius: 5px 0px 0px 5px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px;
     border: none;
     background: white;
     color: black;
     outline: none;
     font-size: 15px;
     padding-left: 10px;
+}
+
+.dropdownPesquisa{
+    display: none;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 580px;
+    height: fit-content;
+    background-color: white;
+    z-index: 8;
+    border-radius: 0px 0px 5px 5px;
+    padding: 0px 10px 10px 10px;
+}
+
+.dropdownPesquisa p{
+    padding-top: 10px;
 }
 
 .caixaDePesquisa .icon3 {
@@ -130,7 +147,8 @@ body{
     transition: 0.3s;
     -webkit-font-smoothing: antialiased;
     border: solid white 1px;
-    border-radius: 0px 5px 5px 0px;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
 }
 
 .iconPosition{
@@ -139,6 +157,30 @@ body{
     align-items: center;
     width: 160.25px;
     justify-content: end;
+
+}
+
+.menuPosition{
+    display: none;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    justify-content: center;
+    background-color: white;
+    border-radius: 50%;
+}
+
+.menu img{
+    width: 18px;
+    height: 18px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    -webkit-font-smoothing: antialiased;
 }
 
 .iconPosition #icon1 {
@@ -242,4 +284,102 @@ body{
     display: flex;
     align-items: center;
     justify-content: center;
+}
+
+@media only screen and (max-width: 1680px) {
+    #navBar{
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+
+    .textMenu {
+        padding-left: 150px;
+        padding-right: 150px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    #navBar{
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+    .textMenu {
+        padding-left: 100px;
+        padding-right: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 1280px) {
+    #navBar{
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+    .textMenu {
+        padding-left: 50px;
+        padding-right: 50px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px) {
+    #navBar{
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+    .iconPosition {
+        margin-right: 24px;
+        width: 40px;
+    }
+
+    .iconPosition #icon1 {
+        margin-right: 0px;
+    }
+
+    .iconPosition .icon2 {
+        display: none;
+    }
+
+    .menuPosition{
+        width:40px;
+        display: flex;
+        height: 100%;
+        margin-left: 24px;
+        align-items: center;
+    }
+
+    .caixaDePesquisaPosition{
+        display: none;
+    }
+
+    .caixaDePesquisa {
+        display: none;
+    }
+
+    .logoPosition {
+        width: 80%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .textMenu {
+        padding-left: 0px;
+        padding-right: 0px;
+    }
+
+}
+
+@media only screen and (max-width: 800px) {
+    #navBar{
+        height: 60px;
+    }
+
+    .textMenu {
+        display: none;
+    }
+
 }

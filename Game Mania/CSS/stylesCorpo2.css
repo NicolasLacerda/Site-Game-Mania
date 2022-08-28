@@ -161,3 +161,21 @@
     font-weight: bold;
     color: white;
 }
+
+@media screen and (max-width: 600px) {
+    .blocoPequeno1 {
+        width: 50%;
+    }
+
+    .blocoPequeno2 {
+        width: 50%;
+    }
+
+    .blocoPequeno3 {
+        display: none;
+    }
+
+    .blocoPequeno4 {
+        display: none;
+    }
+}

@@ -26,42 +26,42 @@
     flex-direction: row;
     width: 100%;
     height: 100%;
-    justify-content: center;
+    justify-content: space-around;
     align-items: center;
 }
 
 .bloco1 {
-    width: 20vw;
-    height: 100%;
-    max-width: 300px;
-    margin-right: 25px;
+    width: 300px;
+    height: 100%;            
+    margin-right: 20px;
     -webkit-font-smoothing: antialiased;
+    transition: ease all .5s;
 }
 
 .bloco2 {
-    width: 20vw;
+    width: 300px;
     height: 100%;
-    max-width: 300px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
     -webkit-font-smoothing: antialiased;
+    transition: ease all .5s;
 }
 
 .bloco3 {
-    width: 20vw;
+    width: 300px;
     height: 100%;
-    max-width: 300px;
-    margin-left: 25px;
-    margin-right: 25px;
+    margin-left: 20px;
+    margin-right: 20px;
     -webkit-font-smoothing: antialiased;
+    transition: ease all .5s;
 }
 
 .bloco4 {
-    width: 20vw;
+    width: 300px;
     height: 100%;
-    max-width: 300px;
-    margin-left: 25px;
+    margin-left: 20px;
     -webkit-font-smoothing: antialiased;
+    transition: ease all .5s;
 }
 
 .topItens {
@@ -101,7 +101,6 @@
 .imagemAnuncio {
     width: 100%;
     height: 250px;
-    max-width: 20vw;
     background-color: gainsboro;
     display: flex;
     justify-content: center;
@@ -145,13 +144,13 @@
 }
 
 .containerContent {
-    width: 100%;
+    width: 300px;
     height: 150px;
     display: flex;
-    max-width: 300px;
     flex-direction: column;
     justify-content: center;
     background-color: #222222;
+    transition: ease all .5s;
 }
 
 .productName{
@@ -164,6 +163,7 @@
     padding: 10px;
     color: white;
     text-align: justify;
+    transition: ease all .5s;
 }
 
 .bottomContent {
@@ -202,6 +202,7 @@
     align-items: center;
     font-size: 20px;
     font-weight: bold;
+    transition: ease all .5s;
 }
 
 .priceText {
@@ -211,6 +212,7 @@
     justify-content: start;
     align-items: start;
     font-size: 13px;
+    transition: ease all .5s;
 }
 
 .marketButtonPosition {
@@ -222,7 +224,7 @@
 }
 
 .marketButton {
-    width: 90px;
+    width: 100%;
     height: 60px;
     border-radius: 5px;
     background-color: white;
@@ -266,4 +268,271 @@
 .blocoPix p{
     font-size: 13px;
     color: white;
+}
+
+@media only screen and (max-width: 1880px) {
+
+    .bloco1 {
+        margin-right: 15px;
+    }
+
+    .bloco2 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .bloco3 {
+        margin-left: 15px;
+        margin-right: 15px;
+    }
+
+    .bloco4 {
+        margin-left: 15px;
+    }
+    
+}
+
+@media only screen and (max-width: 1800px) {
+
+    .bloco1 {
+        margin-right: 10px;
+        width: 275px;
+    }
+
+    .bloco2 {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 275px;
+    }
+
+    .bloco3 {
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 275px;
+    }
+
+    .bloco4 {
+        margin-left: 10px;
+        width: 275px;
+    }
+
+    .topItens {
+        max-width: 275px;
+    }
+
+    .imgGrande {
+        width: 275px;
+        height: 275px;
+    }
+
+    .containerContent{
+        width: 275px;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .priceText {
+        font-size: 10px;
+    }
+
+    .productName{
+        font-size: 12px;
+    }
+
+}
+
+@media only screen and (max-width: 1600px) {
+    .bloco1 {
+        width: 250px;
+    }
+
+    .bloco2 {
+        width: 250px;
+    }
+
+    .bloco3 {
+        width: 250px;
+    }
+
+    .bloco4 {
+        width: 250px;
+    }
+
+    .imgGrande {
+        width: 250px;
+        height: 250px;
+    }
+
+    .containerContent{
+        width: 250px;
+    }
+
+    .topItens {
+        max-width: 250px;
+    }
+}
+
+@media only screen and (max-width: 1500px) {
+    .bloco4 {
+        display: none;
+    }
+
+    .bloco1 {
+        width: 300px;
+    }
+
+    .bloco2 {
+        width: 300px;
+    }
+
+    .bloco3 {
+        width: 300px;
+    }
+
+    .imgGrande {
+        width: 300px;
+    }
+
+    .containerContent{
+        width: 300px;
+    }
+    
+    .topItens {
+        max-width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 1100px) {
+
+    .bloco1 {
+        width: 250px;
+    }
+
+    .bloco2 {
+        width: 250px;
+    }
+    
+    .bloco3 {
+        width: 250px;
+    }
+
+    .topItens {
+        max-width: 250px;
+    }
+
+    .containerContent{
+        width: 250px;
+    }
+    
+}
+
+@media only screen and (max-width: 960px) {
+
+    .bloco1 {
+        width: 350px;
+    }
+
+    .bloco2 {
+        width: 350px;
+    }
+
+    .bloco3 {
+        display: none;
+    }
+
+    .topItens {
+        max-width: 350px;
+    }
+    
+    .containerContent{
+        width: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 860px) {
+
+    .bloco1 {
+        width: 300px;
+    }
+
+    .bloco2 {
+        width: 300px;
+    }
+
+    .containerContent{
+        width: 300px;
+    }
+
+    .topItens {
+        max-width: 300px;
+    }
+
+}
+
+@media only screen and (max-width: 750px) {
+
+    .bloco1 {
+        width: 350px;
+    }
+
+    .bloco2 {
+        display: none;
+    }
+    
+    .topItens {
+        max-width: 350px;
+    }
+
+    .marketButtonPosition {
+        width: 30%;
+        background-image: url(../Img/Icones/shoppingMarketBranco.png);
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-color: #F18F01;
+        border-radius: 5px;
+    }
+
+    .marketButton {
+        width:  70px;
+        height: 70px;
+        background-color: transparent;
+        border: none;
+    }
+
+    .price {
+        font-size: 15px;
+    }
+
+    .marketButtonPosition p{
+        display: none;
+    }
+
+    .pricePosition{
+        width: 70%;
+    }
+
+    .containerContent{
+        width: 350px;
+    }
+
+}
+
+@media only screen and (max-width: 450px) {
+
+    .bloco1 {
+        width: 250px;
+    }
+    
+    .topItens {
+        max-width: 250px;
+    }
+
+    .containerContent{
+        width: 250px;
+    }
+
 }

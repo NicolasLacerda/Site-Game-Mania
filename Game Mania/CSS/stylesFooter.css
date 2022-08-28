@@ -6,6 +6,7 @@
     padding-left: 24px;
     padding-right: 24px;
     background-color: white;
+    transition: ease all .5s;
 }
 
 .menusFooter {
@@ -126,4 +127,44 @@
 
 .l1 img{
     height: 100px;
+}
+
+@media only screen and (max-width: 1680px) {
+    .footer {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .footer {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .footer {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .footer {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .l1 img{
+        display: none;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .footer {
+        display: none;
+    }
 }

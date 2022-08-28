@@ -1,4 +1,4 @@
-let carouselContainer = document.querySelector('.slide-container');
+let carouselContainer = document.querySelector('.container');
 
 let radio = document.querySelectorAll(".btnSlider");
 

@@ -4,6 +4,7 @@
     position: relative;
     overflow: hidden;
     height: 600px;
+    transition: ease all .5s;
 }
 
 input{
@@ -155,4 +156,32 @@ input{
     margin-bottom: 20px;
     font-size: 20px;
     margin-left: 4px;
+}
+
+@media only screen and (max-width: 1680px) {
+    .container {
+        margin-left: 150px;
+        margin-right: 150px;
+    }
+}
+
+@media only screen and (max-width: 1366px) {
+    .container {
+        margin-left: 100px;
+        margin-right: 100px;
+    }
+}
+
+@media only screen and (max-width: 1280px) {
+    .container {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+}
+
+@media only screen and (max-width: 1024px) {
+    .container {
+        margin-left: 0px;
+        margin-right: 0px;
+    }
 }
