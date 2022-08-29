@@ -7,6 +7,7 @@
     padding-top: 30px;
     background-color: #EBEBEB;
     transition: ease all .5s;
+    height: fit-content;
 }
 
 .tituloAnuncios {

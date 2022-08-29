@@ -6,7 +6,7 @@
 }
 
 body{
-    background-color: #1b1e27;
+    background-color: gainsboro;
     width: 100%;
 }
 
@@ -15,8 +15,33 @@ body{
     height: 100%;
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: end;
     position: absolute;
+}
+
+.inicio .imgPosition{
+    width: 50%;
+    height: 100%;
+    display: flex;
+    align-items: center;    
+    justify-content: center;
+}
+
+.inicio .imgPosition img{
+    height: 600px;
+    display: flex;
+    justify-content: center;
+    animation:logoAnimate linear infinite alternate;
+}
+
+@keyframes logoAnimate{
+    0%{
+        transform: translateY(-200px);
+    }
+
+    100%{
+        transform: translateY(200px);
+    }
 }
 
 .logo {
@@ -41,7 +66,7 @@ body{
 }
 
 .espaco {
-    width: 40%;
+    width: 50%;
     height: 100%;
     display: flex;
     justify-content: center;
@@ -49,8 +74,8 @@ body{
 }
 
 .caixaDeLogin {
-    background-color: #181920;
-    width: 450px;
+    background-color: #181818;
+    width: 600px;
     height: 500px;
     position: relative;
     border-radius: 20px;
@@ -99,11 +124,11 @@ body{
     border: none;
     cursor: pointer;
     border-radius: 5px;
-    background-color: #60BB46;
+    background-color: #f18f01;
     color: rgb(0, 0, 0, 0.7);
     font-weight: 800;
     font-size: 20px;
-    box-shadow: 0px 10px 40px -12px #60BB42;
+    box-shadow: 0px 10px 40px -12px #f18f01;
 } 
 
 .textoSend {
@@ -118,7 +143,7 @@ body{
 
 .textoSend a{
     text-decoration: none;
-    color: #60bb46;
+    color: #f18f01;
 }
 
 .textoSend a:hover{
@@ -144,7 +169,7 @@ body{
 }
 
 .login h1{
-    color: #60BB46;
+    color: #f18f01;
     font-weight: 800;
 }
 

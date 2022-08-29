@@ -172,6 +172,7 @@ body{
     justify-content: center;
     background-color: white;
     border-radius: 50%;
+    cursor: pointer;
 }
 
 .menu img{
@@ -200,7 +201,7 @@ body{
     background-image: url(../Img/Icones/Bolsa/miniBolsaPreta.png);
 }
 
-.iconPosition .icon2 {
+.iconPosition #icon2 {
     padding: 20px;
     background-image: url(../Img/Icones/Perfil/miniPerfilCinza.png);
     background-repeat: no-repeat;
@@ -208,10 +209,11 @@ body{
     transition: 0.3s;
     border-radius: 50%;
     background-color: white;
+    cursor: pointer;
     -webkit-font-smoothing: antialiased;
 }
 
-.iconPosition .icon2:hover {
+.iconPosition #icon2:hover {
     background-image: url(../Img/Icones/Perfil/miniPerfilPreto.png);
 }
 
@@ -286,6 +288,104 @@ body{
     justify-content: center;
 }
 
+.loginPosition{
+    height: 525px;
+    width: fit-content;
+    margin-top: 40px;
+    margin-right: 10px;
+    right: 0;
+    position: absolute;
+    z-index: 4;
+    display: none;
+}
+
+.loginPosition #loginBar{
+    background-color: gainsboro;
+    width: 300px;
+    height: 100%;
+    flex-direction: column;
+    border-radius: 5px;
+    -webkit-font-smoothing: antialiased;
+}
+
+.perfilImgPosition{
+    width: 100%;
+    height: 195px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: solid 1px #b4b4b4;
+    flex-direction: column;
+    padding-top: 10px;
+}
+
+.perfilImgPosition .perfilImg{
+    width: 125px;
+    height: 125px;
+    cursor: pointer;
+}
+
+.perfilImgPosition .perfilImg img{
+    width: 100%;
+    height: 100%;
+    object-fit: fill;
+    border-radius: 50%;
+    border: solid 2px #ED9121;
+}
+
+.perfilImgPosition p{
+    padding: 10px;
+    color: gray;
+}
+
+.options{
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: start;
+    width: 100%;
+    height: 330px;
+}
+
+.options .links {
+    width: 100%;
+    height: 55px;
+}
+
+.options .links a{
+    width: 100%;
+    height: 55px;
+    align-items: center;
+    display: flex;
+    flex-direction: row;
+    color: gray;
+    padding: 10px;
+    text-decoration: none;
+    padding-left: 10px;
+}
+
+.options .links:hover {
+    background-color: #D6D6D6;
+}
+
+.options .links:not(:last-child) {
+    border-bottom: #b4b4b4 solid 1px;
+}
+
+.options .links:last-child {
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.menuIcon {
+    height: 35px;
+    width: 35px;
+    margin-right: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
 @media only screen and (max-width: 1680px) {
     #navBar{
         padding-left: 150px;
@@ -339,7 +439,7 @@ body{
         margin-right: 0px;
     }
 
-    .iconPosition .icon2 {
+    .iconPosition #icon2 {
         display: none;
     }
 
@@ -369,6 +469,17 @@ body{
     .textMenu {
         padding-left: 0px;
         padding-right: 0px;
+    }
+
+    .loginPosition{
+        height: 525px;
+        width: fit-content;
+        margin-top: 40px;
+        margin-right: 10px;
+        left: 0;
+        position: absolute;
+        z-index: 4;
+        display: none;
     }
 
 }

@@ -37,7 +37,7 @@
 
 .conjuntoBlocosPequenosDeBaixo {
     width: 100%;
-    height: 250px;
+    height: 100%;
     display: flex;
 }
 
@@ -164,18 +164,61 @@
 
 @media screen and (max-width: 600px) {
     .blocoPequeno1 {
-        width: 50%;
+        width: 350px;
+        padding-right: 0px;
     }
 
     .blocoPequeno2 {
-        width: 50%;
+        width: 350px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-top: 20px;
     }
 
     .blocoPequeno3 {
-        display: none;
+        width: 350px;
+        padding-right: 0px;
+        padding-left: 0px;
+        margin-top: 20px;
     }
 
     .blocoPequeno4 {
-        display: none;
+        width: 350px;
+        padding-left: 0px;
+        margin-top: 20px;
     }
+
+    .blocosPequenos {
+        width: 100%;
+        height: 1060px;
+        display: flex;
+        justify-content: center;
+    }
+
+    .blocoDepartamentos {
+        width: 100%;
+        height: 1060px;
+        display: flex;
+        align-items: center;
+        margin-top: 30px;
+        margin-bottom: 30px;
+        justify-content: center;
+    }
+    
+    .conjuntoBlocosPequenosDeBaixo {
+        width: 350px;
+        height: fit-content;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .botoesPequenos {
+        width: 100%;
+    }
+    
+
+    .botoesPequenos2 {
+        width: 100%;
+    }
+
 }
