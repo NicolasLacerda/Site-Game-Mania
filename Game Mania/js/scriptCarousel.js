@@ -1,12 +1,14 @@
-let carouselContainer = document.querySelector('.container');
+const carouselContainer = document.querySelector('.slide-container');
+const buttonsContainer = document.querySelector('.carouselButtons');
+const dotsContainer = document.querySelector('.carouselDots');
 
-let radio = document.querySelectorAll(".btnSlider");
+const radio = document.querySelectorAll(".btnSlider");
 
-let slides = document.querySelectorAll(".slide");
-let numberOfSlides = slides.length;
+const slides = document.querySelectorAll(".slide");
+const numberOfSlides = slides.length;
 
-let dots = document.querySelectorAll(".dot");
-let numberOfDots = dots.length;
+const dots = document.querySelectorAll(".dot");
+const numberOfDots = dots.length;
 let i = 0;
 
 $(document).ready(function(){
@@ -75,6 +77,23 @@ carouselContainer.addEventListener("mouseover", () => {
     clearInterval(playSlider);
 });
 
+buttonsContainer.addEventListener("mouseover", () => {
+    clearInterval(playSlider);
+});
+
+dotsContainer.addEventListener("mouseover", () => {
+    clearInterval(playSlider);
+});
+
+
 carouselContainer.addEventListener("mouseout", () => {
+    carouselPlay();
+});
+
+buttonsContainer.addEventListener("mouseout", () => {
+    carouselPlay();
+});
+
+dotsContainer.addEventListener("mouseout", () => {
     carouselPlay();
 });
