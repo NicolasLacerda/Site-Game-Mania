@@ -71,25 +71,10 @@ let carouselPlay = () => {
 }
 carouselPlay();
 
-carouselContainer.addEventListener("mouseenter", () => {
+carouselContainer.addEventListener("mouseover", () => {
     clearInterval(playSlider);
 });
 
-carouselContainer.addEventListener("mouseleave", () => {
-    playSlider = setInterval(function(){
-
-        dots.forEach((dot) => {
-            dot.classList.remove("active");
-        });
-    
-        i++;
-    
-        if (i > (numberOfSlides - 1)){
-            i=0;
-        }
-    
-        $(radio[i]).prop('checked', true);
-        $(dots[i]).addClass('active');
-    
-    },5000);
+carouselContainer.addEventListener("mouseout", () => {
+    carouselPlay();
 });
