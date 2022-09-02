@@ -159,6 +159,14 @@ input{
     transition: ease all .5s;
 }
 
+.imageDesktop{
+    display: flex;
+}
+
+.imageMobile{
+    display: none;
+}
+
 @media only screen and (max-width: 1680px) {
     .container {
         margin-left: 150px;
@@ -240,6 +248,18 @@ input{
         height: 45px;
     }
 
+    .imageDesktop{
+        display: none;
+    }
+    
+    .imageMobile{
+        display: flex;
+    }
+
+    .slide-container .slide img {
+        object-fit: cover;
+    }
+
 }
 
 @media only screen and (max-width: 600px) {
@@ -249,7 +269,7 @@ input{
     }
     
     .textoCarroussel .subTitulo{
-        font-size: 9px;
+        display: none;
     }
 
     .textoCarroussel .bot{
@@ -266,7 +286,7 @@ input{
     }
     
     .textoCarroussel .subTitulo{
-        font-size: 8px;
+        display: none;
     }
 
     .textoCarroussel .bot{
