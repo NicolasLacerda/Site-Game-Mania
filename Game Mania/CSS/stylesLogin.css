@@ -2,187 +2,178 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Roboto, sans-serif;
+    font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+      Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
 }
 
 body{
-    background-color: gainsboro;
-    width: 100%;
-}
-
-.inicio {
+    display: flex;
     width: 100%;
     height: 100%;
-    display: flex;
+    justify-content: center;
     align-items: center;
-    justify-content: end;
     position: absolute;
+    background-color: #181920;
 }
 
-.inicio .imgPosition{
+.container{
+    display: flex;
+    width: 80%;
+    height: 80%;
+    border-radius: 20px;
+    box-shadow: 0px 5px 5px 1px rgb(0 0 0 / 20%);
+}
+
+.loginContainerPosition{
     width: 50%;
-    height: 100%;
-    display: flex;
-    align-items: center;    
-    justify-content: center;
-}
-
-.inicio .imgPosition img{
-    height: 600px;
-    display: flex;
-    justify-content: center;
-    animation:logoAnimate linear infinite alternate;
-}
-
-@keyframes logoAnimate{
-    0%{
-        transform: translateY(-200px);
-    }
-
-    100%{
-        transform: translateY(200px);
-    }
-}
-
-.logo {
-    width: 100%;
-    height: 100%;
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
+    background-color: white;
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
 }
 
-.login {
-    width: 100%;
-    height: 30%;
+.loginContainer{
+    width: 60%;
+    height: 500px;
+    border-radius: 5px;
     display: flex;
+    flex-direction: column;
     justify-content: space-around;
     align-items: center;
 }
 
-.login img {
-    width: 100px;
+.loginContainer h1{
+    margin-bottom: 30px;
+}
+
+.inputsArea{
+    width: 100%;
+    height: 180px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.inputsArea .inputContainer{
+    width: 100%;
+    height: 75px;
+}
+
+.inputsArea .inputContainer:not(:last-child){
+    margin-bottom: 30px;
+}
+
+.inputsArea .inputContainer input{
+    width: 100%;
+    height: 50px;
+    background-color: transparent;
+    border-bottom: 1px solid gray;
+    border-top: 0px;
+    border-left: 0px;
+    border-right: 0px;
+    font-size: 20px;
+    outline: none;
+}
+
+.buttonArea{
+    width: 100%;
     height: 100px;
+    margin-top: 40px;
 }
 
-.espaco {
-    width: 50%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.caixaDeLogin {
-    background-color: #181818;
-    width: 600px;
-    height: 500px;
-    position: relative;
-    border-radius: 20px;
-    align-items: center;
-    justify-content: center;
-    display: flex;
-    flex-direction: column;
-}
-
-.top{
-    width: 100%;
-    height: 70%;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding-top: 30px;
-} 
-
-.bot {
-    width: 100%;
-    height: 30%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    padding-top: 30px;
-    padding-bottom: 30px;
-} 
-
-.send {
+.buttonArea .loginButton input{
     width: 100%;
     height: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-.send p{
-    color: #FFF;
-    font-size: 12px;
-}
-
-.send input{
-    width: 80%;
-    height: 50px;
-    border: none;
     cursor: pointer;
     border-radius: 5px;
-    background-color: #f18f01;
-    color: rgb(0, 0, 0, 0.7);
-    font-weight: 800;
+    border: none;
+    background-color: #222;
+    color: white;
     font-size: 20px;
-    box-shadow: 0px 10px 40px -12px #f18f01;
-} 
+    box-shadow: 0px 10px 40px -12px #000002;
+    transition: 0.3s;
+}
 
-.textoSend {
-    width: 100%;
-    height: 15px;
-    margin-top: 10px;
+.buttonArea .registerArea{
     display: flex;
+    width: 100%;
+    height: 35px;
     justify-content: center;
     align-items: center;
-    color: white;
+    padding-top: 10px;
 }
 
-.textoSend a{
+.buttonArea .registerArea p{
+    color: #474747;
+}
+
+.buttonArea .registerArea a{
     text-decoration: none;
-    color: #f18f01;
+    color: black;
+    padding-left: 5px;
 }
 
-.textoSend a:hover{
+.buttonArea .registerArea a:hover{
     text-decoration: underline;
 }
 
-.campo {
-    width: 100%;
-    height: 30%;
+.sliderContainer{
+    width: 50%;
     display: flex;
-    justify-content: space-around;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    background-image:url(../Img/Icones/fundo.png);
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: cover;
+}
+
+.sliderContainer h1{
+    color: #222;
+    width: 60%;
+    font-size: 20px;
+    text-align: justify;
+    display: flex;
+    justify-content: center;
     align-items: center;
 }
 
-.campo input{
-    width: 80%;
-    border: none;
-    background: transparent;
-    color: #FFF;
-    border-bottom: 1px solid #FFF;
-    outline: none;
-    font-size: 22px;
-}
-
-.login h1{
-    color: #f18f01;
-    font-weight: 800;
-}
-
-.check {
-    width: 80%;
-    height: 10%;
+.sliderContainer p{
+    color: #222;
+    width: 60%;
+    font-size: 15px;
+    text-align: justify;
     display: flex;
-    justify-content: start;
+    justify-content: center;
     align-items: center;
+    margin-top: 20px;
 }
 
-.check p{
-    margin-left: 10px;
-    color: #FFF;
-    font-size: 13px;
+.sliderContainer img{
+    width: 70%;
+    -webkit-font-smoothing: antialiased;
+    animation: float 6s ease-in-out infinite;
 }
+
+@keyframes float{
+    0%{
+        transform: translateY(0px);
+    }
+
+    50%{
+        transform: translateY(-20px);
+    }
+
+    100%{
+        transform: translateY(0px);
+    }
+}
+
+
