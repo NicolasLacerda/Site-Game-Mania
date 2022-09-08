@@ -1,6 +1,4 @@
-const carouselContainer = document.querySelector('.slide-container');
-const buttonsContainer = document.querySelector('.carouselButtons');
-const dotsContainer = document.querySelector('.carouselDots');
+const carouselContainer = document.querySelector('.container');
 
 const radio = document.querySelectorAll(".btnSlider");
 
@@ -77,23 +75,6 @@ carouselContainer.addEventListener("mouseover", () => {
     clearInterval(playSlider);
 });
 
-buttonsContainer.addEventListener("mouseover", () => {
-    clearInterval(playSlider);
-});
-
-dotsContainer.addEventListener("mouseover", () => {
-    clearInterval(playSlider);
-});
-
-
 carouselContainer.addEventListener("mouseout", () => {
-    carouselPlay();
-});
-
-buttonsContainer.addEventListener("mouseout", () => {
-    carouselPlay();
-});
-
-dotsContainer.addEventListener("mouseout", () => {
     carouselPlay();
 });
