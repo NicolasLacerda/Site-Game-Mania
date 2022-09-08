@@ -14,6 +14,7 @@ input{
 .slide-container {
     height: 100%;
     width: 500%;
+    position: relative;
     display: flex;
 }
 
@@ -23,17 +24,10 @@ input{
 }
 
 .slide-container .slide {
-    position: relative;
-    display: none;
-    float: left;
     width: 20%;
-    margin-right: -100%;
-    backface-visibility: hidden;
-    transition: transform .6s ease-in-out;
-}
-
-.slide-container .active{
-    display: block;
+    height: 100%;
+    display: flex;
+    transition: 1s;
 }
 
 .carouselButtons{
@@ -84,6 +78,18 @@ input{
     background-image: url(../Img/Icones/setaLaranja.png);
 }
 
+#radio1:checked ~ .active {
+    margin-left: 0;
+}
+
+#radio2:checked ~ .active {
+    margin-left: -20%;
+}
+
+#radio3:checked ~ .active {
+    margin-left: -40%;
+}
+
 .carouselDots{
     display: flex;
     align-items: center;
@@ -99,7 +105,6 @@ input{
     height: 4px;
     margin: 10px;
     background-color: gainsboro;
-    transition: opacity .6s ease;
 }
 
 .carouselDots .active{

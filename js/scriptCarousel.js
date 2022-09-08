@@ -19,17 +19,13 @@ $('#next').click(function(){
         dot.classList.remove("active");
     });
 
-    slides.forEach((slide) => {
-        slide.classList.remove("active");
-    });
-
     i++;
 
     if (i > (numberOfSlides - 1)){
         i=0;
     }
 
-    $(slides[i]).addClass('active');
+    $(radio[i]).prop('checked', true);
     $(dots[i]).addClass('active');
 
 });
@@ -42,17 +38,13 @@ $('#prev').click(function(){
         dot.classList.remove("active");
     });
 
-    slides.forEach((slide) => {
-        slide.classList.remove("active");
-    });
-
     i--;
 
     if (i < 0){
         i=(numberOfSlides - 1);
     }
 
-    $(slides[i]).addClass('active');
+    $(radio[i]).prop('checked', true);
     $(dots[i]).addClass('active');
 });
 
@@ -66,22 +58,17 @@ let carouselPlay = () => {
             dot.classList.remove("active");
         });
     
-        slides.forEach((slide) => {
-            slide.classList.remove("active");
-        });
-    
         i++;
     
         if (i > (numberOfSlides - 1)){
             i=0;
         }
     
-        $(slides[i]).addClass('active');
+        $(radio[i]).prop('checked', true);
         $(dots[i]).addClass('active');
     
     },5000);
 }
-
 carouselPlay();
 
 carouselContainer.addEventListener("mouseover", () => {
