@@ -25,19 +25,29 @@ $(".menu").click(function () {
 $(".caixaDePesquisa").click(function () {
   var clicks = $(this).data("clicks");
   if (clicks) {
-    $(".dropdownPesquisa").animate({ height: "hide" }, 300);
+    $(".caixaDePesquisaPosition").removeClass("active");
+    $(".dropdownPesquisa").css("display", "none");
     $(":input").css("border-bottom-left-radius", "5px");
     $(".icon3").css("border-bottom-right-radius", "5px");
-    setTimeout(function () {
-      $(".caixaDePesquisaPosition").removeClass("active");
-    }, 301);
   } else {
     $(".caixaDePesquisaPosition").addClass("active");
-    $(".dropdownPesquisa").animate({ height: "show" }, 300);
+    $(".dropdownPesquisa").css("display", "flex");
     $(":input").css("border-bottom-left-radius", "0px");
     $(".icon3").css("border-bottom-right-radius", "0px");
   }
+
   $(this).data("clicks", !clicks);
+});
+
+$(document).mouseup(function (e) {
+  var container = $(".dropdownPesquisa");
+
+  if (!container.is(e.target) && container.has(e.target).length === 0) {
+    $(".dropdownPesquisa").css("display", "none");
+    $(".caixaDePesquisaPosition").removeClass("active");
+    $(":input").css("border-bottom-left-radius", "5px");
+    $(".icon3").css("border-bottom-right-radius", "5px");
+  }
 });
 
 //botão carrinho

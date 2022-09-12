@@ -23,7 +23,6 @@ body {
   justify-content: space-between;
   padding-left: 200px;
   padding-right: 200px;
-  transition: ease all 0.5s;
 }
 
 .textMenu {
@@ -102,6 +101,7 @@ body {
 #navBar .active {
   top: 160px;
   height: 350px;
+  display: flex;
 }
 
 .caixaDePesquisa {
@@ -125,10 +125,6 @@ body {
   padding-left: 10px;
 }
 
-.caixaDePesquisa .active {
-  border-bottom-left-radius: 0px;
-}
-
 .dropdownPesquisa {
   display: none;
   justify-content: center;
@@ -142,8 +138,16 @@ body {
   padding: 0px 10px 10px 10px;
 }
 
-.dropdownPesquisa p {
+.dropdownPesquisa a {
   padding-top: 10px;
+  text-decoration: none;
+  color: black;
+  height: fit-content;
+  text-align: justify;
+}
+
+.dropdownPesquisa a:hover {
+  text-decoration: underline;
 }
 
 .caixaDePesquisa .icon3 {
@@ -152,7 +156,6 @@ body {
   background-image: url(../Img/Icones/Lupa/miniBuscadorCinza.png);
   background-repeat: no-repeat;
   background-position: center center;
-  transition: 0.3s;
   -webkit-font-smoothing: antialiased;
   border: solid white 1px;
   border-top-right-radius: 5px;
