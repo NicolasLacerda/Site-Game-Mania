@@ -93,11 +93,15 @@ body {
 .caixaDePesquisaPosition {
   position: relative;
   width: 580px;
-  height: 350px;
+  height: 30px;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+#navBar .active {
   top: 160px;
+  height: 350px;
 }
 
 .caixaDePesquisa {
@@ -119,6 +123,10 @@ body {
   outline: none;
   font-size: 15px;
   padding-left: 10px;
+}
+
+.caixaDePesquisa .active {
+  border-bottom-left-radius: 0px;
 }
 
 .dropdownPesquisa {
